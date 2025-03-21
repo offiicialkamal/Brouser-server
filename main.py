@@ -87,7 +87,8 @@ def isURL(url):
 @app.route('/')
 def index():
   print('request got')
-  return 200
+  return 'ok'
+  
 @app.route('/proxy')
 def proxy():
     url = request.args.get('url')
