@@ -83,7 +83,11 @@ def isURL(url):
     except Exception as e:
         print(e)
         
-        
+
+@app.route('/')
+def index():
+  print('request got')
+  return 200
 @app.route('/proxy')
 def proxy():
     url = request.args.get('url')
